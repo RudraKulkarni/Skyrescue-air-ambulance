@@ -12,7 +12,7 @@
   text-align: center;
   padding: 120px 5% 90px;
   color: var(--white);
-  background-image: url("../images/aboutbg.jpg");
+  background-image: url(".images/aboutbg.jpg");
   background-size: cover;
   background-position: center 35%;
   overflow: hidden;

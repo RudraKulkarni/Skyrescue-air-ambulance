@@ -6,7 +6,7 @@
 /* ===== TOKENS ===== */
 :root{
   /* hero */
-  --hero-img: url('../images/helicopterhero.jpg');
+  --hero-img: url('.images/helicopterhero.jpg');
 
   /* ops theme */
   --ops-bg:#f8fbff;

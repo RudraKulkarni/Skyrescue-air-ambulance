@@ -30,7 +30,7 @@
 }
 
 /* page-specific bg (keep it class-based, no inline styles) */
-.svc-hero--helicopter{ --hero-bg: url("../images/aboutbg.jpg"); } /* change to your helicopter bg path */
+.svc-hero--helicopter{ --hero-bg: url(".images/aboutbg.jpg"); } /* change to your helicopter bg path */
 
 .svc-hero__bg{
   position: absolute;
@@ -1449,7 +1449,7 @@
   overflow: hidden;
   border-top: 1px solid rgba(255,255,255,0.08);
   border-bottom: 1px solid rgba(255,255,255,0.08);
-  background-image: url("../images/cloud.jpg");
+  background-image: url(".images/cloud.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1697,7 +1697,7 @@
   border-top: 1px solid rgba(10,20,35,0.06);
 }
 
-.svc-hero--fixedwing{ --hero-bg: url("../images/fixedwing.jpg"); }
+.svc-hero--fixedwing{ --hero-bg: url(".images/fixedwing.jpg"); }
 
 .final-cta__container{
   width: min(1200px, 92%);
@@ -2142,7 +2142,7 @@
   }
 }
 
-.svc-hero--icu{ --hero-bg: url("../images/icusetup.jpg"); }
+.svc-hero--icu{ --hero-bg: url(".images/icusetup.jpg"); }
 
 .fw-intro-media{
   margin-bottom: 18px;

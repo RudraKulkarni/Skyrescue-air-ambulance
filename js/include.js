@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Include navbar
     const navbar = document.getElementById("navbar");
     if (navbar) {
-        fetch("./navbar.html")
+        fetch("navbar.html")
             .then(response => response.text())
             .then(data => {
                 navbar.innerHTML = data;
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Include footer
     const footer = document.getElementById("site-footer");
     if (footer) {
-        fetch("./footer.html")
+        fetch("footer.html")
             .then(response => response.text())
             .then(data => {
                 footer.innerHTML = data;
