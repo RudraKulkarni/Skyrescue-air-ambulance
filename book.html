@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Now | SkyRescue</title>
+  <meta
+    name="description"
+    content="Book a SkyRescue air ambulance transfer for patient transport, ICU transfer, hospital-to-hospital movement, and urgent medical aviation support."
+  />
+     <!-- Google Fonts (same as about.html for consistency) -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=general-sans@400,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/book.css" />
+</head>
+<body>
+
+  <!-- Shared Navbar -->
+  <div id="navbar"></div>
+
+  <main class="book-page">
+
+    <!-- =========================
+         BOOK HERO
+    ========================== -->
+    <section class="book-hero">
+      <div class="container book-hero-grid">
+        <div class="book-hero-copy reveal-up">
+          <span class="book-kicker">Patient Transfer Request</span>
+          <h1>Start a Critical Care Transfer, Without Delay</h1>
+          <p>
+            Submit a structured booking request for patient transport, hospital-to-hospital transfer,
+            ICU movement, and emergency air ambulance coordination.
+          </p>
+
+          <div class="book-hero-pills">
+            <span>24/7 Case Response</span>
+            <span>Bed-to-Bed Coordination</span>
+            <span>Domestic & International Transfers</span>
+          </div>
+
+          <div class="book-hero-actions">
+            <a href="tel:+919175959644" class="book-btn book-btn-primary">Call for Immediate Assistance</a>
+            <a href="#booking-form-section" class="book-btn book-btn-secondary">Fill Booking Form</a>
+          </div>
+        </div>
+
+        <div class="book-hero-card reveal-up">
+          <div class="book-hero-card-inner">
+            <span class="mini-label">Urgent Booking Support</span>
+            <h3>Clear booking flow for faster medical movement</h3>
+            <p>
+              Use this page to submit a transfer request for a patient. Our team will review
+              the details and connect with you for confirmation and coordination.
+            </p>
+
+            <div class="hero-alert">
+              <strong>Need immediate help?</strong>
+              Calling our team is the fastest option for urgent and time-sensitive cases.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         BOOKING FORM SECTION
+    ========================== -->
+    <section class="booking-form-section" id="booking-form-section">
+      <div class="container">
+        <div class="booking-form-shell reveal-up">
+          <div class="booking-form-head">
+            <span class="section-kicker">Book SkyRescue Transfer</span>
+            <h2>Transfer Request Details</h2>
+            <p>
+              Enter the booking details below so our medical and aviation coordination team can review the case quickly.
+            </p>
+          </div>
+
+          <form class="booking-form" id="bookingForm" novalidate>
+            <div class="booking-form-grid">
+
+              <!-- Requester Details -->
+              <div class="form-block-title">Requester Information</div>
+
+              <div class="form-field">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter full name" required />
+              </div>
+
+              <div class="form-field">
+                <label for="organisation">Hospital / Organisation</label>
+                <input type="text" id="organisation" name="organisation" placeholder="Enter hospital or organisation" />
+              </div>
+
+              <div class="form-field">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required />
+              </div>
+
+              <div class="form-field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter email address" required />
+              </div>
+
+              <!-- Transfer Route -->
+              <div class="form-block-title form-block-title-full">Transfer Route</div>
+              <div class="form-field">
+  <label for="transferType">Transfer Type</label>
+  <select id="transferType" name="transferType" required>
+    <option value="">Select transfer type</option>
+    <option value="domestic">Domestic</option>
+    <option value="international">International</option>
+  </select>
+</div>
+
+<div class="form-field">
+  <label for="urgencyLevel">Urgency Level</label>
+  <select id="urgencyLevel" name="urgencyLevel" required>
+    <option value="">Select urgency</option>
+    <option value="emergency">Immediate / Emergency</option>
+    <option value="within-24">Within 24 Hours</option>
+    <option value="scheduled">Scheduled Transfer</option>
+  </select>
+</div>
+
+             <div class="form-field">
+  <label for="fromHospital">From Hospital</label>
+  <select id="fromHospital" name="fromHospital" required>
+    <option value="">Select transfer type first</option>
+  </select>
+</div>
+
+<div class="form-field">
+  <label for="toHospital">To Hospital</label>
+  <select id="toHospital" name="toHospital" required>
+    <option value="">Select transfer type first</option>
+  </select>
+</div>
+
+              <div class="form-field hidden-field" id="fromHospitalOtherWrap">
+                <label for="fromHospitalOther">Other From Hospital</label>
+                <input type="text" id="fromHospitalOther" name="fromHospitalOther" placeholder="Enter hospital name" />
+              </div>
+
+              <div class="form-field hidden-field" id="toHospitalOtherWrap">
+                <label for="toHospitalOther">Other To Hospital</label>
+                <input type="text" id="toHospitalOther" name="toHospitalOther" placeholder="Enter hospital name" />
+              </div>
+
+              <div class="form-field">
+                <label for="fromCity">From City</label>
+                <input type="text" id="fromCity" name="fromCity" placeholder="Enter departure city" required />
+              </div>
+
+              <div class="form-field">
+                <label for="toCity">To City</label>
+                <input type="text" id="toCity" name="toCity" placeholder="Enter destination city" required />
+              </div>
+              
+              <div class="form-field">
+  <label for="transferDate">Preferred Transfer Date</label>
+  <input type="date" id="transferDate" name="transferDate" required />
+</div>
+
+<div class="form-field">
+  <label for="transferTime">Preferred Time</label>
+  <input type="time" id="transferTime" name="transferTime" />
+</div>
+
+              <!-- Service & Medical -->
+              <div class="form-block-title form-block-title-full">Service & Medical Requirements</div>
+
+              <div class="form-field">
+                <label for="serviceType">Service Required</label>
+                <select id="serviceType" name="serviceType" required>
+                  <option value="">Select service</option>
+                  <option value="helicopter">Helicopter Ambulance</option>
+                  <option value="fixed-wing">Fixed Wing Air Ambulance</option>
+                  <option value="icu-air">ICU Air Ambulance</option>
+                  <option value="international">International Transfer</option>
+                  <option value="medical-escort">Medical Escort</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="treatmentType">Patient Condition / Treatment Type</label>
+                <select id="treatmentType" name="treatmentType" required>
+                  <option value="">Select condition / treatment</option>
+                  <option value="trauma">Trauma / Accident</option>
+                  <option value="cardiac">Cardiac Care</option>
+                  <option value="neuro">Neuro / Stroke</option>
+                  <option value="ventilator">Ventilator Support</option>
+                  <option value="neonatal">Neonatal / Pediatric</option>
+                  <option value="oncology">Oncology Transfer</option>
+                  <option value="post-surgery">Post-Surgery Transfer</option>
+                  <option value="critical-care">Critical Care</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="fleetType">Preferred Fleet Type</label>
+                <select id="fleetType" name="fleetType" required>
+                  <option value="">Select fleet type</option>
+                  <option value="learjet">Learjet</option>
+                  <option value="king-air">King Air C90</option>
+                  <option value="beechcraft">Beechcraft B200</option>
+                  <option value="bell-407">Bell 407</option>
+                  <option value="airbus-h145">Airbus H145</option>
+                  <option value="best-available">Best Available Aircraft</option>
+                  <option value="team-advised">To Be Advised by Team</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="patientName">Patient Name</label>
+                <input type="text" id="patientName" name="patientName" placeholder="Enter patient name" />
+              </div>
+
+              <div class="form-field">
+                <label for="patientAge">Patient Age</label>
+                <input type="number" id="patientAge" name="patientAge" placeholder="Enter patient age" min="0" />
+              </div>
+
+              <div class="form-field form-field-full">
+                <label for="notes">Case Notes / Additional Information</label>
+                <textarea
+                  id="notes"
+                  name="notes"
+                  rows="6"
+                  placeholder="Add any relevant medical, operational, or transfer details"
+                ></textarea>
+              </div>
+
+            </div>
+
+            <div class="booking-form-actions">
+              <button type="submit" class="book-btn book-btn-primary">Submit Transfer Request</button>
+              <p class="booking-form-note">
+  Final charges are shared after review of medical needs, route, fleet availability, and operational requirements.
+  For general enquiries or coordination queries, please use the <a href="contact.html">Contact</a> page.
+</p>
+            </div>
+
+            <p class="form-status" id="bookingFormStatus" aria-live="polite"></p>
+          </form>
+
+          <div class="booking-summary" id="bookingSummary" hidden>
+  <div class="booking-summary-head">
+    <span class="section-kicker">Request Summary</span>
+    <h3>Your Transfer Request Has Been Logged</h3>
+    <p>Our coordination team will review these details and contact you shortly.</p>
+  </div>
+
+  <div class="booking-summary-grid" id="bookingSummaryGrid"></div>
+</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         TRUST STRIP
+    ========================== -->
+    <section class="booking-trust-strip">
+      <div class="container booking-trust-grid reveal-up">
+        <div class="trust-item">
+          <h3>Rapid Review</h3>
+          <p>Requests are reviewed quickly for time-sensitive medical movement.</p>
+        </div>
+        <div class="trust-item">
+          <h3>Structured Coordination</h3>
+          <p>Medical, logistics, and transfer planning are aligned by our team.</p>
+        </div>
+        <div class="trust-item">
+          <h3>24/7 Support</h3>
+          <p>Our team remains available for urgent and emergency transfer cases.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+ <!-- Footer include -->
+<div id="site-footer"></div>
+
+  <!-- Success Popup -->
+  <div class="booking-popup" id="bookingPopup" aria-hidden="true">
+    <div class="booking-popup-card">
+      <button class="booking-popup-close" id="bookingPopupClose" aria-label="Close popup">×</button>
+      <div class="booking-popup-icon">✓</div>
+      <h3>Request Submitted</h3>
+      <p>
+        Your transfer request has been received. Our team will review the details and contact you shortly.
+      </p>
+      <button class="book-btn book-btn-primary" id="bookingPopupOk">Okay</button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/nav.js"></script>
+  <script src="./js/include.js"></script>
+  <script src="./js/book.js"></script>
+</body>
+</html>

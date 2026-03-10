@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - SkyRescue Air Ambulance</title>
+<meta name="description" content="SkyRescue Air Ambulance provides lifesaving air ambulance services across India with professionalism and care. Learn about our journey, mission, and leadership.">
+<meta name="keywords" content="Air Ambulance, SkyRescue, Medical Transfers, Emergency Medical Services">
+<meta name="author" content="SkyRescue Air Ambulance">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=general-sans@400,500&display=swap" rel="stylesheet">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+<!-- Navbar include -->
+<div id="navbar"></div>
+
+<section class="about-hero-slider">
+  <div class="about-slider">
+    <div class="about-slide active" style="background-image: url('./images/abouthero1.jpg');"></div>
+    <div class="about-slide" style="background-image: url('./images/abouthero2.jpg');"></div>
+    <div class="about-slide" style="background-image: url('./images/abouthero3.jpg');"></div>
+    <div class="about-slide" style="background-image: url('./images/abouthero4.jpg');"></div>
+
+    <!-- Overlay for text -->
+    <div class="hero-overlay">
+      <div class="hero-content" data-aos="fade-up">
+        <h1>About Us</h1>
+        <p>SkyRescue Air Ambulance – Providing lifesaving medical transfers with professionalism and care.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Placeholder: Who We Are Section will go here -->
+<section class="who-we-are" data-aos="fade-up">
+  <div class="wwa-wrap">
+
+    <!-- LEFT: TEXT -->
+    <div class="wwa-left">
+      <h2 class="wwa-title" data-aos="fade-up" data-aos-delay="50">Who We Are</h2>
+
+      <p class="wwa-lead" data-aos="fade-up" data-aos-delay="120">
+        SkyRescue Air Ambulance is a patient-first air medical service focused on fast coordination,
+        ICU-ready care in transit, and seamless hospital-to-hospital transfers across India.
+      </p>
+
+      <!-- highlights (stagger) -->
+      <ul class="wwa-points">
+        <li data-aos="fade-up" data-aos-delay="180">
+          <span class="dot"></span>
+          24/7 coordination with rapid dispatch and real-time updates.
+        </li>
+        <li data-aos="fade-up" data-aos-delay="240">
+          <span class="dot"></span>
+          ICU-grade equipment with trained medical teams onboard.
+        </li>
+        <li data-aos="fade-up" data-aos-delay="300">
+          <span class="dot"></span>
+          Pan-India network support with hospital coordination and ground ambulance linkage.
+        </li>
+      </ul>
+
+      <!-- stats -->
+      <div class="wwa-stats" data-aos="fade-up" data-aos-delay="360">
+        <div class="wwa-stat">
+          <div class="wwa-stat-num">24/7</div>
+          <div class="wwa-stat-label">Response</div>
+        </div>
+        <div class="wwa-stat">
+          <div class="wwa-stat-num">ICU</div>
+          <div class="wwa-stat-label">Ready Teams</div>
+        </div>
+      </div>
+
+      <!-- read more -->
+     <div class="wwa-more">
+  <button class="wwa-more-btn" type="button" aria-expanded="false">
+    Read More
+  </button>
+
+  <div class="wwa-more-panel" aria-hidden="true">
+    <div class="wwa-more-inner">
+      <br><p>
+  SkyRescue Air Ambulance is built for critical moments—where minutes matter. We operate with a safety-first mindset,
+  combining clinical expertise with aviation-grade operational planning to move patients securely between cities and hospitals.
+</p>
+
+<p>
+  Our team coordinates the entire journey end-to-end: medical assessment, onboard equipment planning, ground ambulance
+  linkage, flight clearances, and receiving-hospital handover. Families receive clear communication throughout the transfer,
+  so the process feels guided, transparent, and calm—even during emergencies.
+</p>
+
+<p>
+  Whether it’s a NICU/PICU transfer, trauma case, cardiac emergency, or long-distance medical relocation, our goal is simple:
+  deliver the right care, at the right time, with continuity and compassion.
+</p>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <!-- RIGHT: IMAGE -->
+    <div class="wwa-right" data-aos="zoom-in" data-aos-delay="120">
+      <div class="wwa-img">
+        <img src="./images/who-we-are.jpeg" alt="SkyRescue medical team and aircraft">
+        <div class="wwa-tag">Patient-First • Safety-Led • Always Ready</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Placeholder: Journey Section will go here -->
+<section class="journey" id="journey">
+  <div class="journey-wrap">
+    <div class="journey-head" data-aos="fade-up">
+      <h2>Our Journey</h2>
+      <p>
+        From a mission-driven start to a safety-led air medical service—each milestone reflects better response,
+        stronger coordination, and ICU-ready transfers.
+      </p>
+    </div>
+
+    <div class="journey-timeline" id="journeyTimeline">
+      <!-- CENTER SPINE -->
+      <div class="journey-line" aria-hidden="true">
+        <span class="journey-cap top"></span>
+        <div class="journey-line-fill" id="journeyFill"></div>
+        <span class="journey-cap bottom"></span>
+      </div>
+
+      <!-- ONE PLANE THAT MOVES DOWN THE SPINE -->
+      <div class="journey-plane" id="journeyPlane" aria-hidden="true"></div>
+
+      <!-- ITEM 1 (RIGHT) -->
+      <div class="j-item right" data-step="1">
+        <div class="j-node"></div>
+        <div class="j-branch"></div>
+
+        <div class="j-card">
+          <div class="j-meta">2019</div>
+          <h3>Founded With One Goal</h3>
+          <p>To make time-critical medical transfers faster, safer, and better coordinated for families and hospitals.</p>
+        </div>
+      </div>
+
+      <!-- ITEM 2 (LEFT) -->
+      <div class="j-item left" data-step="2">
+        <div class="j-node"></div>
+        <div class="j-branch"></div>
+
+        <div class="j-card">
+          <div class="j-meta">2020</div>
+          <h3>ICU-Ready Transfer Protocols</h3>
+          <p>Standardized onboard care planning—equipment, monitoring, and staffing aligned to patient condition.</p>
+        </div>
+      </div>
+
+      <!-- ITEM 3 (RIGHT) -->
+      <div class="j-item right" data-step="3">
+        <div class="j-node"></div>
+        <div class="j-branch"></div>
+
+        <div class="j-card">
+          <div class="j-meta">2021</div>
+          <h3>Expanded Hospital Coordination</h3>
+          <p>Built smoother referrals and handovers with partner hospitals for bedside-to-bedside continuity of care.</p>
+        </div>
+      </div>
+
+      <!-- ITEM 4 (LEFT) -->
+      <div class="j-item left" data-step="4">
+        <div class="j-node"></div>
+        <div class="j-branch"></div>
+
+        <div class="j-card">
+          <div class="j-meta">2022</div>
+          <h3>Stronger Ground Linkage</h3>
+          <p>Improved end-to-end time by coordinating ground ambulances with flight schedules and receiving teams.</p>
+        </div>
+      </div>
+
+      <!-- ITEM 5 (RIGHT) -->
+      <div class="j-item right" data-step="5">
+        <div class="j-node"></div>
+        <div class="j-branch"></div>
+
+        <div class="j-card">
+          <div class="j-meta">2023</div>
+          <h3>24/7 Rapid Response Model</h3>
+          <p>Faster dispatch workflows with clearer updates—families, hospitals, and teams stay aligned throughout.</p>
+        </div>
+      </div>
+
+      <!-- ITEM 6 (LEFT) -->
+      <div class="j-item left" data-step="6">
+        <div class="j-node"></div>
+        <div class="j-branch"></div>
+
+        <div class="j-card">
+          <div class="j-meta">2025</div>
+          <h3>Expanded Capability & Specialization</h3>
+          <p>Enhanced readiness for specialized transfers with better planning, staffing, and clinical support paths.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Placeholder: Awards & Recognitions Section will go here -->
+<!-- ===== AWARDS & RECOGNITIONS ===== -->
+<section class="awards" id="awards">
+  <div class="awards-wrap">
+    <div class="awards-head">
+      <h2>Awards & Recognitions</h2>
+      <p>
+        Trusted by partners and validated through performance, safety discipline, and consistent bedside-to-bedside coordination.
+      </p>
+    </div>
+
+    <!-- Featured -->
+    <div class="award-feature" data-award
+      data-title="Excellence in Patient Transfer Coordination"
+      data-year="2024"
+      data-org="Regional Healthcare Network"
+      data-desc="Recognized for streamlined coordination workflows that improved transfer readiness and reduced turnaround times."
+      data-tag="Operations">
+      <div class="af-left">
+        <div class="award-badge">🏆 Featured</div>
+        <h3>Excellence in Patient Transfer Coordination</h3>
+        <div class="award-meta">
+          <span class="award-pill">2024</span>
+          <span class="award-dot">•</span>
+          <span class="award-org">Regional Healthcare Network</span>
+        </div>
+        <p>
+          Validated for reliable planning, communication discipline, and continuity of care from referral to handover.
+        </p>
+        <button class="award-btn" type="button">View Details</button>
+      </div>
+
+      <div class="af-right" aria-hidden="true">
+        <div class="award-mark">
+          <span class="am-top">SkyRescue</span>
+          <span class="am-mid">Award</span>
+          <span class="am-bot">2024</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="awards-grid" id="awardsGrid">
+      <article class="award-card" data-award
+        data-title="Safety Protocol Compliance Recognition"
+        data-year="2023"
+        data-org="Independent Audit Panel"
+        data-desc="Acknowledged for adherence to standardized safety checks and clinical readiness processes."
+        data-tag="Safety">
+        <div class="award-top">
+          <span class="award-icon">🛡️</span>
+          <span class="award-pill">2023</span>
+        </div>
+        <h4>Safety Protocol Compliance Recognition</h4>
+        <p>Standard checks, consistent documentation, and risk-aware decision making.</p>
+        <div class="award-foot">
+          <span class="award-tag">Safety</span>
+          <span class="award-org">Independent Audit Panel</span>
+        </div>
+      </article>
+
+      <article class="award-card" data-award
+        data-title="Rapid Response Service Distinction"
+        data-year="2022"
+        data-org="Emergency Care Forum"
+        data-desc="Recognized for faster dispatch coordination and clearer updates across stakeholders."
+        data-tag="Response">
+        <div class="award-top">
+          <span class="award-icon">⚡</span>
+          <span class="award-pill">2022</span>
+        </div>
+        <h4>Rapid Response Service Distinction</h4>
+        <p>Dispatch clarity, quick mobilization, and smooth team coordination.</p>
+        <div class="award-foot">
+          <span class="award-tag">Response</span>
+          <span class="award-org">Emergency Care Forum</span>
+        </div>
+      </article>
+
+      <article class="award-card" data-award
+        data-title="Clinical Readiness Appreciation"
+        data-year="2021"
+        data-org="Partner Hospital Group"
+        data-desc="Appreciated for ICU-ready transfer planning aligned to patient needs."
+        data-tag="Clinical">
+        <div class="award-top">
+          <span class="award-icon">🩺</span>
+          <span class="award-pill">2021</span>
+        </div>
+        <h4>Clinical Readiness Appreciation</h4>
+        <p>Equipment readiness, monitoring standards, and patient-first planning.</p>
+        <div class="award-foot">
+          <span class="award-tag">Clinical</span>
+          <span class="award-org">Partner Hospital Group</span>
+        </div>
+      </article>
+
+      <article class="award-card" data-award
+        data-title="Service Excellence Mention"
+        data-year="2020"
+        data-org="Healthcare Service Council"
+        data-desc="Mentioned for compassionate updates and seamless family-hospital coordination."
+        data-tag="Service">
+        <div class="award-top">
+          <span class="award-icon">🤝</span>
+          <span class="award-pill">2020</span>
+        </div>
+        <h4>Service Excellence Mention</h4>
+        <p>Calm communication, consistent updates, and dependable coordination.</p>
+        <div class="award-foot">
+          <span class="award-tag">Service</span>
+          <span class="award-org">Healthcare Service Council</span>
+        </div>
+      </article>
+
+      <article class="award-card" data-award
+        data-title="Operational Discipline Recognition"
+        data-year="2019"
+        data-org="Quality Review Board"
+        data-desc="Recognized for structured planning and reliable operational documentation."
+        data-tag="Operations">
+        <div class="award-top">
+          <span class="award-icon">📋</span>
+          <span class="award-pill">2019</span>
+        </div>
+        <h4>Operational Discipline Recognition</h4>
+        <p>Clear workflows, stable processes, and documented handover discipline.</p>
+        <div class="award-foot">
+          <span class="award-tag">Operations</span>
+          <span class="award-org">Quality Review Board</span>
+        </div>
+      </article>
+
+      <article class="award-card" data-award
+        data-title="Partner Trust Award"
+        data-year="2019"
+        data-org="Referral Partners"
+        data-desc="Recognized for dependable coordination and consistent bedside-to-bedside execution."
+        data-tag="Trust">
+        <div class="award-top">
+          <span class="award-icon">⭐</span>
+          <span class="award-pill">2019</span>
+        </div>
+        <h4>Partner Trust Award</h4>
+        <p>Reliable coordination across teams with predictable outcomes.</p>
+        <div class="award-foot">
+          <span class="award-tag">Trust</span>
+          <span class="award-org">Referral Partners</span>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- Drawer -->
+  <div class="award-drawer" id="awardDrawer" aria-hidden="true">
+    <div class="ad-backdrop" data-drawer-close></div>
+
+    <aside class="ad-panel" role="dialog" aria-modal="true" aria-label="Award details">
+      <button class="ad-close" type="button" data-drawer-close aria-label="Close">✕</button>
+
+      <div class="ad-head">
+        <div class="ad-icon" id="adIcon">🏆</div>
+        <div class="ad-title">
+          <h3 id="adTitle">Award Title</h3>
+          <div class="ad-meta">
+            <span class="award-pill" id="adYear">2024</span>
+            <span class="award-dot">•</span>
+            <span class="award-org" id="adOrg">Organization</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ad-body">
+        <div class="ad-tags">
+          <span class="award-tag" id="adTag">Category</span>
+        </div>
+        <p id="adDesc">
+          Award description goes here.
+        </p>
+
+        <div class="ad-proof">
+          <div class="ad-proof-row">
+            <span class="ad-proof-k">Impact</span>
+            <span class="ad-proof-v">Better coordination • Reduced delays • Clearer updates</span>
+          </div>
+          <div class="ad-proof-row">
+            <span class="ad-proof-k">Focus</span>
+            <span class="ad-proof-v">Safety discipline • Clinical readiness • Continuity of care</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- Placeholder: Purposes & Principles Section will go here -->
+<!-- ===== PURPOSES & PRINCIPLES (ORB + CAROUSEL) ===== -->
+<section class="purpose" id="purpose">
+  <div class="purpose-wrap">
+    <div class="purpose-head">
+      <h2>Purpose & Principles</h2>
+      <p>What drives SkyRescue — and how we operate when every minute matters.</p>
+    </div>
+
+    <!-- Purpose Orb -->
+    <div class="purpose-orb" aria-label="Our purpose">
+      <div class="orb-badge">OUR PURPOSE</div>
+      <h3>To protect time, safety, and continuity of care during critical medical transfers.</h3>
+      <p>
+        We exist to reduce uncertainty for families and hospitals by ensuring disciplined coordination,
+        ICU-ready planning, and clear communication at every step.
+      </p>
+    </div>
+
+    <!-- Principles Slider -->
+    <div class="principles" aria-label="Principles slider">
+      <div class="principles-top">
+        <button class="p-btn" id="pPrev" type="button" aria-label="Previous principle">‹</button>
+        <div class="p-stage">
+          <div class="p-slide" id="pSlide">
+            <!-- filled by JS -->
+          </div>
+        </div>
+        <button class="p-btn" id="pNext" type="button" aria-label="Next principle">›</button>
+      </div>
+
+      <div class="p-dots" id="pDots" aria-label="Principle selectors">
+        <!-- chips by JS -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer include -->
+<div id="site-footer"></div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/nav.js"></script>
+<script src="./js/include.js"></script>
+<script src="./js/about.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+</body>
+</html>

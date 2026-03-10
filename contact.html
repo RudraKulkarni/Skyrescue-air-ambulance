@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | SkyRescue</title>
+  <meta
+    name="description"
+    content="Contact SkyRescue Air Ambulance for hospital coordination, service enquiries, support, and team assistance."
+  />
+   <!-- Google Fonts (same as about.html for consistency) -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=general-sans@400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
+</head>
+<body>
+
+<!-- Navbar include -->
+<div id="navbar"></div>
+
+  <main class="contact-page">
+
+    <!-- =========================
+         CONTACT HERO
+    ========================== -->
+    <section class="contact-hero">
+      <div class="container contact-hero-grid">
+        <div class="contact-hero-copy reveal-up">
+          <span class="contact-kicker">Contact & Coordination</span>
+          <h1>Let’s Connect the Right Care, Faster</h1>
+          <p>
+            Reach the SkyRescue coordination team for hospital communication,
+            service-related enquiries, transfer guidance, and urgent support.
+          </p>
+
+          <div class="contact-hero-pills">
+            <span>24/7 Response</span>
+            <span>Medical + Aviation Team</span>
+            <span>Pan India & International Reach</span>
+          </div>
+
+          <div class="contact-hero-actions">
+            <a href="tel:+919175959644" class="contact-btn contact-btn-primary">Call Our Team</a>
+            <a href="#contact-connect" class="contact-btn contact-btn-secondary">Send Enquiry</a>
+          </div>
+        </div>
+
+        <div class="contact-hero-card reveal-up">
+          <div class="contact-hero-card-inner">
+            <span class="mini-label">Need assistance?</span>
+            <h3>Professional coordination, without confusion</h3>
+            <p>
+              This page is for enquiries, support, hospital communication, and
+              coordination-related contact.
+            </p>
+            <div class="hero-note">
+              <strong>For patient transfer booking,</strong>
+              please use the <a href="./book.html">Book Now</a> page.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CONTACT CONNECT SECTION
+    ========================== -->
+    <section class="contact-connect" id="contact-connect">
+      <div class="container contact-connect-grid">
+
+        <!-- LEFT -->
+        <div class="contact-info reveal-up">
+          <span class="section-kicker">Reach Our Team</span>
+          <h2>Clear communication when every detail matters</h2>
+          <p class="contact-info-lead">
+            Connect with us for medical transfer guidance, hospital coordination,
+            partnership enquiries, operational questions, and urgent assistance.
+          </p>
+
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <h3>Call Helpline</h3>
+                <p><a href="tel:+919175959644">+91 91759 59644</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">✉️</div>
+              <div>
+                <h3>Email Support</h3>
+                <p><a href="mailto:info@skyrescue.in">info@skyrescue.in</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🏥</div>
+              <div>
+                <h3>Hospital Coordination</h3>
+                <p>
+                  For case discussion, communication support, and institutional
+                  coordination.
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">⏰</div>
+              <div>
+                <h3>Availability</h3>
+                <p>24/7 for urgent and time-sensitive support.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="contact-form-wrap reveal-up">
+          <div class="contact-form-card">
+            <div class="contact-form-head">
+              <span class="section-kicker">Send an Enquiry</span>
+              <h2>Contact SkyRescue</h2>
+              <p>
+                Share your enquiry and our coordination team will get in touch shortly.
+              </p>
+            </div>
+
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="contact-form-grid">
+
+                <div class="form-field">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="organisation">Organisation / Hospital</label>
+                  <input type="text" id="organisation" name="organisation" placeholder="Enter organisation or hospital name" />
+                </div>
+
+                <div class="form-field">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label for="subject">Subject / Enquiry Type</label>
+                  <select id="subject" name="subject" required>
+                    <option value="">Select enquiry type</option>
+                    <option value="hospital">Hospital Coordination</option>
+                    <option value="service">Service Enquiry</option>
+                    <option value="support">Support Request</option>
+                    <option value="partnership">Partnership / Institutional Enquiry</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Write your enquiry here"
+                    required
+                  ></textarea>
+                </div>
+
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="contact-btn contact-btn-primary">Submit Enquiry</button>
+                <p class="form-note">
+                  For confirmed patient transfer requests, please use the
+                  <a href="book.html">Book Now</a> page.
+                </p>
+              </div>
+
+              <p class="form-status" id="formStatus" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         MAP SECTION
+    ========================== -->
+    <section class="contact-map-section">
+      <div class="container">
+        <div class="contact-map-head reveal-up">
+          <span class="section-kicker">Coverage & Reach</span>
+          <h2>Coordinating care across critical routes</h2>
+          <p>
+            Built to support hospitals, families, and care teams across cities
+            with speed, structure, and reliability.
+          </p>
+        </div>
+
+        <div class="contact-map-card reveal-up">
+          <div class="contact-map-visual">
+
+  <div class="real-map-layer">
+    <img src="./images/worldmap.jpg" alt="SkyRescue coverage map" />
+  </div>
+
+  <div class="map-glow map-glow-a"></div>
+  <div class="map-glow map-glow-b"></div>
+  <div class="india-focus-glow"></div>
+
+  <div class="map-marker marker-delhi">
+    <span class="dot"></span>
+    <span class="label">Delhi</span>
+  </div>
+
+  <div class="map-marker marker-mumbai">
+    <span class="dot"></span>
+    <span class="label">Mumbai</span>
+  </div>
+
+  <div class="map-marker marker-hyderabad">
+    <span class="dot"></span>
+    <span class="label">Hyderabad</span>
+  </div>
+
+  <div class="map-marker marker-bengaluru">
+    <span class="dot"></span>
+    <span class="label">Bengaluru</span>
+  </div>
+
+  <div class="map-marker marker-dubai">
+    <span class="dot"></span>
+    <span class="label">Dubai</span>
+  </div>
+
+  <div class="map-marker marker-singapore">
+    <span class="dot"></span>
+    <span class="label">Singapore</span>
+  </div>
+
+  <svg class="flight-svg" viewBox="0 0 1000 420" preserveAspectRatio="none" aria-hidden="true">
+    <path
+      class="flight-path-base"
+      d="M165,175 C250,120 345,125 430,180 C520,240 610,245 700,205 C790,165 860,140 925,158"
+    />
+    <path
+      class="flight-path-dash"
+      d="M165,175 C250,120 345,125 430,180 C520,240 610,245 700,205 C790,165 860,140 925,158"
+    />
+  </svg>
+
+  <div class="plane-wrap" aria-hidden="true">
+    <div class="plane">✈</div>
+  </div>
+
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer include -->
+<div id="site-footer"></div>
+
+  <!-- SUCCESS POPUP -->
+  <div class="contact-popup" id="contactPopup" aria-hidden="true">
+    <div class="contact-popup-card">
+      <button class="contact-popup-close" id="contactPopupClose" aria-label="Close popup">×</button>
+      <div class="contact-popup-icon">✓</div>
+      <h3>Enquiry Submitted</h3>
+      <p>
+        Your enquiry has been received. Our coordination team will get in touch shortly.
+      </p>
+      <button class="contact-btn contact-btn-primary" id="contactPopupOk">Okay</button>
+    </div>
+  </div>
+  
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/nav.js"></script>
+<script src="./js/include.js"></script>
+
+  <script src="./js/contact.js"></script>
+</body>
+</html>
